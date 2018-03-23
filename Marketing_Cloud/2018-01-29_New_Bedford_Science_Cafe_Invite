@@ -1,0 +1,26 @@
+<table>
+	<tr>
+		<td style="width: 65%; vertical-align: top;">
+			<p>Dear %%[ if not empty(@fname) then ]%%%%= v(@fname) =%%%%[ else ]%%Friend%%[ endif ]%%,</p>
+			<p>The Massachusetts Sierra Club is pleased to invite you to this great event coming up in New Bedford next week!</p>
+			<h2 style="color: blue;">Tuesday, February 6th from 6-8pm</h2>
+			<h3 style="color: blue;">Please join us for the New Bedford Science Café!</h3>
+			<p>The New Bedford Science Café provides an opportunity for anyone in the community to hear from and talk with local scientists and experts in a relaxed atmosphere.</p>
+			<p>Our guests will be <strong>Anthony Ucci</strong> and <strong>Paul Vigeant</strong>, discussing “The Intricacies of Building &amp; Installing Ocean Wind Turbines.” Ucci is a professor of Engineering at Bristol Community College. Vigeant is the Director of the New Bedford Wind Energy Center.</p>
+			<h4>Greasy Luck Brew Pub, 791 Purchase Street, New Bedford, MA</h4>
+			<p><a href="http://www.nbsciencecafe.com/">http://www.nbsciencecafe.com/</a></p>
+		</td>
+		<td style="background-color: #b1c4e2; padding: 10px; color: white;">
+			<p style="margin-top: 25px; margin-bottom: 25px;">Do you love science?</p>
+			<hr width="50px">
+			<p style="margin-top: 25px; margin-bottom: 25px;">Do you love beer?</p>
+			<hr width="50px">
+			<p style="margin-top: 25px; margin-bottom: 25px;">Whether its either, neither, or both...</p>
+			<hr width="50px">
+			<p style="margin-top: 25px; margin-bottom: 25px;">You don't want to miss this!</p>
+			<hr width="50px">
+			<p style="margin-top: 25px; margin-bottom: 25px;">FREE, except for the beer.</p>
+		</td>
+	</tr>
+</table>
+
