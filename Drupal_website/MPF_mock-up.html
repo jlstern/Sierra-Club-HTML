@@ -21,7 +21,7 @@
 	blueButton.addEventListener("click", function(){ changeColors("blue"); });
 	greenButton.addEventListener("click", function(){ changeColors("green"); });
 
-	var visColor = "red";
+	var visColor
 
 	function changeColors(showColor){
 		visColor = showColor;
@@ -36,6 +36,8 @@
 			green.style.display = "inline-block";
 		}
 	}
+
+	changeColors("blue");
 
 </script>
 

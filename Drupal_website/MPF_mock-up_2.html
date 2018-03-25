@@ -1,0 +1,86 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+<style type="text/css">
+	* {
+		font-family: georgia;
+	}
+	table {
+		border-collapse: collapse;
+		font-weight: bold;
+		text-align: center;
+	}
+	td {
+		padding: 5px;
+	}
+	#rowOne {
+		font-size: 20px;
+	}
+	.electric {
+		background-color: lightgreen;
+	}
+	.heating {
+		background-color: salmon;
+	}
+	.transit {
+		background-color: lightblue;
+	}
+	.oneHundred {
+		background-color: #FFF373;
+	}
+	.math {
+		min-width: 30px;
+	}
+</style>
+
+<!-- main content -->
+<h1>100% Renewable Cities Resource Hub</h1>
+<table>
+	<tr id="rowOne">
+		<td class="electric menuItem">Clean Electricity Generation</td>
+		<td class="math">+</td>
+		<td class="heating menuItem">Renewable Heating and Cooling</td>
+		<td class="math">+</td>
+		<td class="transit menuItem">Zero Emission Transportation</td>
+		<td class="math">=</td>
+		<td class="oneHundred">A 100% Renewable Future</td>
+	</tr>
+	<tr></tr>
+</table>
+
+<h2 class="electricContent contentBlock">Electricity</h2>
+<h2 class="heatingContent contentBlock">Renewable Heating and Cooling</h2>
+<h2 class="transitContent contentBlock">Transit</h2>
+
+<!-- script -->
+<script type="text/javascript">
+	var electric = $(".electric");
+	var heating = $(".heating");
+	var transit = $(".transit");
+	var oneHundred = $(".oneHundred");
+	var math = $(".math");
+
+	$(".electric").click(function(){
+		showContent(".electricContent")
+	});
+	$(".heating").click(function(){
+		showContent(".heatingContent")
+	});
+	$(".transit").click(function(){
+		showContent(".transitContent")
+	});
+
+	function showContent(contentName){
+		$(".contentBlock").hide();
+		$(contentName).show();
+	}
+
+	// $(".menuItem").click(function(){
+	// 	$(".menuItem").hide();
+	// 	$(this).show();
+	// });
+
+
+</script>
