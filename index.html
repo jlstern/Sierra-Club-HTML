@@ -12,15 +12,33 @@
 		font-family: georgia;
 	}
 	table {
-		border-collapse: collapse;
-		font-weight: bold;
+		/*border-collapse: collapse;*/
 		text-align: center;
+		margin-bottom: 10px;
+	}
+	th {
+		padding-bottom: 25px;
+		font-size: 18px;
 	}
 	td {
 		padding: 5px;
 	}
 	#rowOne {
 		font-size: 20px;
+		font-weight: bold;
+	}
+	#rowTwo {
+		font-size: 12px;
+		font-style: italic;
+	}
+	.planning {
+		background-color: tan;
+		max-width: 170px;
+		margin: auto;
+		padding: 5px;
+	}
+	.menuItem {
+		height: 75px;
 	}
 	.electric {
 		background-color: lightgreen;
@@ -37,6 +55,18 @@
 	.math {
 		min-width: 30px;
 	}
+	.contentBlock {
+		clear: both;
+	}
+	.resource {
+		text-align: center;
+		padding: 40px 5px;
+		border: 1px solid black;
+		width: 140px;
+		height: 60px;
+		float: left;
+		margin: 10px 10px 25px 10px;
+	}
 </style>
 </head>
 
@@ -44,6 +74,7 @@
 <body>
 <h1>100% Renewable Cities Resource Hub</h1>
 <table>
+	<th colspan="7"><div class="menuItem planning">Planning for 100%<br>(start here)</div></th>
 	<tr id="rowOne">
 		<td class="electric menuItem">Clean Electricity Generation</td>
 		<td class="math">+</td>
@@ -53,45 +84,65 @@
 		<td class="math">=</td>
 		<td class="oneHundred">A 100% Renewable Future</td>
 	</tr>
-	<tr></tr>
+	<tr id="rowTwo">
+		<td>click above for more info</td>
+		<td></td>
+		<td>click above for more info</td>
+		<td></td>
+		<td>click above for more info</td>
+		<td></td>
+		<td>(this is where we'd put sample resolutions, etc.)</td>
+	</tr>
 </table>
+<hr style="width: 75%">
+<div class="planningContent contentBlock">
+	<h2>Planning for 100%</h2>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/GreenhouseGasGHGInventoryFactSheet.pdf">Conducting a Greenhouse Gas Inventory</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/GreenCommunitiesfactsheet.pdf">Green Communities Program</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/GreenCommunitiesfactsheet.pdf">Developing a Climate Action Plan</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/ClimatePlanningEquityFactsheet.pdf">Climate Planning for Equity</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/NetZeroFactSheet.pdf">Net Zero</a></div>
 
+	<div class="resource"><a target="_blank" href="https://lead.mapc.org/">Local Energy Action Dashboard</a></div>
+	<div class="resource">Hiring an Energy/
+	Sustainability Manager</div>
+</div>
+	
 <div  class="electricContent contentBlock">
-	<h2>Electricity</h2>
-	<ul>
-		<li>Community Choice Energy</li>
-		<li>Local solar/wind</li>
-	</ul>
-	<h4>Energy Effiency</h4>
-	<ul>
-		<li>Energy Effiency for Municipal Buildings</li>
-	</ul>
+	<h2>Electricity Generation and Efficiency</h2>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/Energyefficiencyformunicipalbuildings.pdf">Energy Efficiency for Municipal Buildings</a></div>
+	<div class="resource"><a target="_blank" href="http://docs.google.com/document/d/1-EDiSxzlOHz60P_qTvDQdQJjZdb0CJVn-DpYOKQr76M/edit">Green Community Choice Aggregation</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/SolarElectricityfactsheet.pdf">Local Solar</a></div>
+	<div class="resource">Local Wind</div>
 </div>
 
 <div class="heatingContent contentBlock">
 	<h2>Renewable Heating and Cooling</h2>
-	<ul>
-		<li>Heat pumps</li>
-	</ul>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/RenewableHeatingFactSheet.pdf">Renewable Heating</a></div>
 </div>
 
 <div class="transitContent contentBlock">
 	<h2>Transit</h2>
-	<ul>
-		<li>Complete Strees</li>
-		<li>Municipal EVs</li>
-	</ul>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/EncouragingEVAdoptionInfoSheet.pdf">Adoption of Electric Vehicles</a></div>
+	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/CompleteStreets.pdf">Complete Streets</a></div>
+
+
 </div>
 
 
 <!-- script -->
 <script type="text/javascript">
+	var planning = $(".planning");
 	var electric = $(".electric");
 	var heating = $(".heating");
 	var transit = $(".transit");
 	var oneHundred = $(".oneHundred");
 	var math = $(".math");
+	 var resources = $(".resource");
 
+	$(".planning").click(function(){
+		showContent(".planningContent")
+	});
 	$(".electric").click(function(){
 		showContent(".electricContent")
 	});
@@ -107,16 +158,32 @@
 		$(contentName).show();
 	}
 
+	// showContent("electricContent");
+
 	// $(".menuItem").click(function(){
 	// 	$(".menuItem").hide();
 	// 	$(this).show();
 	// });
 
+  function getRandomColor(){
+    var letters = 'BCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ){
+      color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
+	}
+
+	function applyColors(){
+	 	for(i = 0; i < resources.length; i++){
+	 		resources[i].style.backgroundColor = getRandomColor();
+	 	}
+	}
+
+	applyColors();
+
 
 </script>
-
-
-
 
 </body>
 </html>
