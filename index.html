@@ -12,7 +12,36 @@
 <!-- main content -->
 <body>
 <h1>100% Renewable Cities Resource Hub</h1>
-<table>
+<p>Our dependence on dirty energy like oil and gas pollutes our air and water and harms the health of Massachusetts’ communities. Pipelines threaten our safety and our green spaces. Pollution from fossil fuels are changing our climate and increasing the frequency of droughts, severe storms, and other damaging weather events.</p>
+<p>We need local action across the globe to advance our clean energy future – and that's why Mass Power Forward has decided to launch local clean energy campaigns across the state. A number of communities have already committed to 100% Renewables through a resolution or warrant article. <span class="examples"><a href="">Click here to read more.</a></span></p>
+
+<div class="start-here"><div class="title">Start Here</div></div>
+
+<div class="menu">
+
+	<div class="float menu-item"><div class="title">Clean Electricity Generation</div>
+
+	</div>
+	<div class="float arithmetic"><div class="title">+</div></div>
+
+	<div class="float menu-item"><div class="title">Buildings, Heating, and Cooling</div>
+
+	</div>
+	<div class="float arithmetic"><div class="title">+</div>
+
+	</div>
+	<div class="float menu-item"><div class="title">Zero Emission Transportation</div></div>
+
+	<div class="float arithmetic"><div class="title">=</div></div>
+
+	<div class="float menu-item"><div class="title">A 100% Renewable Future</div>
+
+	</div>
+
+</div>
+
+
+<!-- <table>
 	<th colspan="7"><div class="menuItem planning">Planning for 100%<br>(start here)</div></th>
 	<tr id="rowOne">
 		<td class="electric menuItem">Clean Electricity Generation</td>
@@ -32,8 +61,11 @@
 		<td></td>
 		<td>(this is where we'd put sample resolutions, etc.)</td>
 	</tr>
-</table>
-<hr style="width: 75%">
+</table> -->
+
+
+
+<!-- <hr style="width: 75%">
 <div class="planningContent contentBlock">
 	<h2>Planning for 100%</h2>
 	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/GreenhouseGasGHGInventoryFactSheet.pdf">Conducting a Greenhouse Gas Inventory</a></div>
@@ -66,63 +98,10 @@
 	<div class="resource"><a target="_blank" href="http://mapowerforward.com/files/powerforward/100re/CompleteStreets.pdf">Complete Streets</a></div>
 
 
-</div>
+</div> -->
 
 
-<!-- script -->
-<script type="text/javascript">
-	var planning = $(".planning");
-	var electric = $(".electric");
-	var heating = $(".heating");
-	var transit = $(".transit");
-	var oneHundred = $(".oneHundred");
-	var math = $(".math");
-	 var resources = $(".resource");
 
-	$(".planning").click(function(){
-		showContent(".planningContent")
-	});
-	$(".electric").click(function(){
-		showContent(".electricContent")
-	});
-	$(".heating").click(function(){
-		showContent(".heatingContent")
-	});
-	$(".transit").click(function(){
-		showContent(".transitContent")
-	});
-
-	function showContent(contentName){
-		$(".contentBlock").hide();
-		$(contentName).show();
-	}
-
-	// showContent("electricContent");
-
-	// $(".menuItem").click(function(){
-	// 	$(".menuItem").hide();
-	// 	$(this).show();
-	// });
-
-  function getRandomColor(){
-    var letters = 'BCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ){
-      color += letters[Math.floor(Math.random() * letters.length)];
-    }
-    return color;
-	}
-
-	function applyColors(){
-	 	for(i = 0; i < resources.length; i++){
-	 		resources[i].style.backgroundColor = getRandomColor();
-	 	}
-	}
-
-	applyColors();
-
-
-</script>
-
+<script type="text/javascript" src="mpfcities.js"></script>
 </body>
 </html>
