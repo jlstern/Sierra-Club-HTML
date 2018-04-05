@@ -1,0 +1,59 @@
+* {
+	font-family: georgia;
+}
+table {
+	/*border-collapse: collapse;*/
+	text-align: center;
+	margin-bottom: 10px;
+}
+th {
+	padding-bottom: 25px;
+	font-size: 18px;
+}
+td {
+	padding: 5px;
+}
+#rowOne {
+	font-size: 20px;
+	font-weight: bold;
+}
+#rowTwo {
+	font-size: 12px;
+	font-style: italic;
+}
+.planning {
+	background-color: tan;
+	max-width: 170px;
+	margin: auto;
+	padding: 5px;
+}
+.menuItem {
+	height: 75px;
+}
+.electric {
+	background-color: lightgreen;
+}
+.heating {
+	background-color: salmon;
+}
+.transit {
+	background-color: lightblue;
+}
+.oneHundred {
+	background-color: #FFF373;
+}
+.math {
+	min-width: 30px;
+}
+.contentBlock {
+	clear: both;
+}
+.resource {
+	text-align: center;
+	padding: 40px 5px;
+	border: 1px solid black;
+	width: 140px;
+	height: 60px;
+	float: left;
+	margin: 10px 10px 25px 10px;
+}
