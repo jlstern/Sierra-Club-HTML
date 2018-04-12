@@ -6,16 +6,16 @@ var oneHundred = $(".oneHundred");
 var math = $(".math");
  var resources = $(".resource");
 
-$(".planning").click(function(){
+$(".start-here").click(function(){
 	showContent(".planningContent")
 });
-$(".electric").click(function(){
+$(".generation").click(function(){
 	showContent(".electricContent")
 });
-$(".heating").click(function(){
+$(".buildings").click(function(){
 	showContent(".heatingContent")
 });
-$(".transit").click(function(){
+$(".transportation").click(function(){
 	showContent(".transitContent")
 });
 
@@ -24,27 +24,5 @@ function showContent(contentName){
 	$(contentName).show();
 }
 
-// showContent("electricContent");
-
-// $(".menuItem").click(function(){
-// 	$(".menuItem").hide();
-// 	$(this).show();
-// });
-
-function getRandomColor(){
-  var letters = 'BCDEF'.split('');
-  var color = '#';
-  for (var i = 0; i < 6; i++ ){
-    color += letters[Math.floor(Math.random() * letters.length)];
-  }
-  return color;
-}
-
-function applyColors(){
- 	for(i = 0; i < resources.length; i++){
- 		resources[i].style.backgroundColor = getRandomColor();
- 	}
-}
-
-applyColors();
-
+$(".fas").addClass("fa-3x");
+showContent(".planningContent");

@@ -4,86 +4,93 @@
 body {
 	width: 960px;
 }
-.menu {
+img {
+	width: 170px;
+}
+a:link {
+	color: darkblue;
+}
+a:visited {
+	color: green;
 }
 .float {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.menu-item {
-	height: 100px;
-	width: 190px;
-	border: 1px solid red;
-	text-align: center;
-	padding: 5px;
-}
-.hor-spacer {
-	clear: both;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
 .start-here {
   margin: auto;
   text-align: center;
-  width: 60%;
   padding: 10px;
+  height: 40px;
+	width: 190px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #F5B664
+}
+.start-here-text {
+	position: relative;
+	top: -15px;
+	font-weight: bold;
 }
 .title {
-	font-size: 24px;
-	font-weight: bold;
-}
-
-/*table {
-	text-align: center;
-	margin-bottom: 10px;
-}
-th {
-	padding-bottom: 25px;
 	font-size: 18px;
-}
-td {
-	padding: 5px;
-}
-#rowOne {
-	font-size: 20px;
 	font-weight: bold;
 }
-#rowTwo {
-	font-size: 12px;
-	font-style: italic;
+.menu {
+	position: relative;
+	top: 45px;
 }
-.planning {
-	background-color: tan;
-	max-width: 170px;
-	margin: auto;
+.menu-item {
+	height: 160px;
+	width: 190px;
+	border: 1px solid black;
+	border-radius: 15px;
+	text-align: center;
 	padding: 5px;
 }
-.menuItem {
-	height: 75px;
+.generation {
+	background-color: #FCEC83;
 }
-.electric {
-	background-color: lightgreen;
-}
-.heating {
-	background-color: salmon;
-}
-.transit {
+.buildings {
 	background-color: lightblue;
 }
-.oneHundred {
-	background-color: #FFF373;
+.transportation {
+	background-color: #F5AEAE
 }
-.math {
-	min-width: 30px;
+.future {
+	background-color: #4CF58B;
 }
-
+.arithmetic {
+	margin-top: 65px;
+	font-size: 36px;
+	font-weight: bold;
+}
+.click-here {
+	position: relative;
+	top: 15px;
+}
+.hor-spacer {
+	clear: both;
+	margin-top: 105px;
+	margin-bottom: 15px;
+	width: 60%;
+}
+.lower-section {
+	position: relative;
+	top: 70px;
+}
+.contentBlock {
+	float: left;
+}
 .resource {
 	text-align: center;
-	padding: 40px 5px;
+	padding: 10px 5px;
 	border: 1px solid black;
 	width: 140px;
-	height: 60px;
+	height: 120px;
 	float: left;
 	margin: 10px 10px 25px 10px;
-}*/
+	border-radius: 15px;
+	/*background-color: #D9F2FC;*/
+}
