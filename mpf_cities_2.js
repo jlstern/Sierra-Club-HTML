@@ -23,10 +23,14 @@ function cleanUp(){
 	$(".menu-item").css("background-color", "white");
 	$(".content-block").addClass("hidden");
 }
-
+// Tooltips
+$(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
 // Roadmap
-$("#map-of-mass").load("https://jlstern.github.io/Sierra-Club-HTML/ma_map.svg");
-$
+// $("#map-of-mass").load("https://jlstern.github.io/Sierra-Club-HTML/ma_map.svg");
+
+
 
 
 var greenCommunities = []
