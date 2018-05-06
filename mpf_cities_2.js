@@ -25,10 +25,11 @@ function cleanUp(){
 }
 
 // Roadmap
-function importMap(){
-	var x = $("ma_map.svg").html();
-	console.log(x);
-}
-// importMap();
+$("#map-of-mass").load("https://jlstern.github.io/Sierra-Club-HTML/ma_map.svg");
+$
+
 
 var greenCommunities = []
+
+
+
