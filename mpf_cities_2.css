@@ -11,9 +11,13 @@ li a:link {
 p a:link {
 	font-weight: bold;
 }
+#mpf-logo {
+	float: right;
+	margin-top: 10px;
+}
 .mpf-tab {
 	font-size: 18px;
-	width: 33%;
+	width: 25%;
 	text-align: center;
 	font-weight: bold;
 }
@@ -28,7 +32,7 @@ p a:link {
 .menu-item {
 	height: 175px;
 	width: 190px;
-	border: 1px solid black;
+	border: 3px solid darkgray;
 	border-radius: 15px;
 	text-align: center;
 	padding: 5px;
@@ -41,7 +45,7 @@ p a:link {
 	text-align: center;
 	margin: 10px;
 	padding: 12px 5px 5px 5px;
-	border: 1px solid black;
+	border: 2px solid darkgray;
 	border-radius: 15px;
 	width: 140px;
 	height: 140px;
@@ -53,7 +57,7 @@ p a:link {
 }
 .resource-note {
 	margin: 20px 0 0 10px;
-	width: 600px;
+	width: 500px;
 	float: left;
 }
 /*RESOURCES PAGE*/
@@ -64,10 +68,20 @@ p a:link {
 .generation {
 	background-color: #FCEC83;
 }
+.generation-content .resource {
+	background-color: #FCEC83;
+}
+.building-content .resource {
+	background-color: lightblue;
+}
+.transportation-content .resource {
+	background-color: #F5AEAE;
+}
 .arithmetic {
 	margin-top: 65px;
 	font-size: 36px;
 	font-weight: bold;
+	color: darkgray;
 }
 .click-here {
 	position: relative;
@@ -82,6 +96,14 @@ p a:link {
 #map-of-mass {
 	width: 600px;
 	padding: 10px;
+}
+/*FAQ*/
+#menu4 h2 {
+	margin-bottom: 30px;
+}
+#menu4 h4 {
+	margin-bottom: 4px;
+	margin-top: 20px;
 }
 /*TOOLTIPS*/
 
@@ -98,4 +120,25 @@ p a:link {
 .vert-spacer {
 	padding-top: 15px;
 }
+/*EDIT BOOTSTRAP*/
+.nav-tabs{
+	border-bottom-width: 3px;
+	border-color: darkgray;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border-width: 3px;
+	border-bottom-width: 5px;
+	border-top-color: darkgray;
+	border-left-color: darkgray;
+	border-right-color: darkgray;
+}
+.nav-tabs>li>a {
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	margin-bottom: -2.5px;
+}
+
+
+
+
 
