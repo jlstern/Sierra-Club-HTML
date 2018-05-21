@@ -1,9 +1,9 @@
 body {
-	width: 960px;
+	/*width: 960px;*/
 	padding: 10px 20px 10px 20px;
 }
 .container {
-	max-width: 960px;
+	/*max-width: 960px;*/
 }
 li a:link {
 	font-weight: bold;
@@ -96,6 +96,10 @@ p a:link {
 #map-of-mass {
 	width: 600px;
 	padding: 10px;
+}
+.text-highlight {
+	color: #337ab7;
+	font-weight: bold;
 }
 /*FAQ*/
 #menu4 h2 {
