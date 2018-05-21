@@ -91,6 +91,7 @@ p a:link {
 .subtitle {
 	font-style: italic;
 	color: gray;
+	clear: both;
 }
 /*ROADMAP PAGE*/
 #map-of-mass {
