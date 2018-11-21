@@ -16,7 +16,7 @@ $(".transportation").click(function(){
 });
 $(".future").click(function(){
 	cleanUp();
-	$(".future").css("background-color", "#4CF58B");
+	$(".future").css("background-color", "#A2E08D");
 	$(".future-content").removeClass("hidden");
 });
 function cleanUp(){
