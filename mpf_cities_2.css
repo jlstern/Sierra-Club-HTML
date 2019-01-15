@@ -96,6 +96,17 @@ p a:link {
 	color: gray;
 	clear: both;
 }
+/*PROGRESS TABLE*/
+.progress-table {
+	border: 1px solid black;
+}
+.progress-table td {
+	padding: 3px;
+	border: 1px solid black;
+}
+.yes {
+	background-color: #B8EBA7;
+}
 /*ROADMAP PAGE*/
 #map-of-mass {
 	width: 600px;
